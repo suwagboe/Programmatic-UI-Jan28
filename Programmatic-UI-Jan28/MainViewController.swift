@@ -19,6 +19,9 @@ class MainViewController: UIViewController {
     // loadView() sets up the inital view of the controller
     // do not call super when overriding loadView()
     
+    private var savedColor = UserDefaults.standard.object(forKey: AppKey.appColorKey)
+    
+    
     override func loadView() {
         // does the set up for the view
         view = mainView
@@ -28,11 +31,14 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // use system colors so it can configure to dark mode.
-                    view.backgroundColor = .systemBackground
+                    view.backgroundColor = savedColor as? UIColor
        configureNavBar()
         
         //add target action for reset
         mainView.resetButton.addTarget(self, action: #selector(resetAppColor(_:)), for: .touchUpInside)
+        
+         // call the user defaults that saves it here.
+        
     }
     
         override func viewWillAppear(_ animated: Bool) {
