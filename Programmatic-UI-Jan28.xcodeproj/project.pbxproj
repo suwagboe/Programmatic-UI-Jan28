@@ -12,8 +12,9 @@
 		55EC8CA023E0861000642729 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC8C9F23E0861000642729 /* MainViewController.swift */; };
 		55EC8CA523E0861100642729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EC8CA423E0861100642729 /* Assets.xcassets */; };
 		55EC8CA823E0861100642729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EC8CA623E0861100642729 /* LaunchScreen.storyboard */; };
-		55EC8CB023E08FCF00642729 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC8CAF23E08FCF00642729 /* settingsViewController.swift */; };
+		55EC8CB023E08FCF00642729 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC8CAF23E08FCF00642729 /* SettingsViewController.swift */; };
 		55EC8CB223E09AE400642729 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC8CB123E09AE400642729 /* MainView.swift */; };
+		55EC8CB423E0BD8100642729 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC8CB323E0BD8100642729 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		55EC8CA423E0861100642729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55EC8CA723E0861100642729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55EC8CA923E0861100642729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55EC8CAF23E08FCF00642729 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		55EC8CAF23E08FCF00642729 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		55EC8CB123E09AE400642729 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		55EC8CB323E0BD8100642729 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +62,10 @@
 			children = (
 				55EC8C9B23E0861000642729 /* AppDelegate.swift */,
 				55EC8C9D23E0861000642729 /* SceneDelegate.swift */,
-				55EC8CAF23E08FCF00642729 /* settingsViewController.swift */,
-				55EC8C9F23E0861000642729 /* MainViewController.swift */,
+				55EC8CB323E0BD8100642729 /* SettingsView.swift */,
+				55EC8CAF23E08FCF00642729 /* SettingsViewController.swift */,
 				55EC8CB123E09AE400642729 /* MainView.swift */,
+				55EC8C9F23E0861000642729 /* MainViewController.swift */,
 				55EC8CA423E0861100642729 /* Assets.xcassets */,
 				55EC8CA623E0861100642729 /* LaunchScreen.storyboard */,
 				55EC8CA923E0861100642729 /* Info.plist */,
@@ -143,8 +146,9 @@
 				55EC8CA023E0861000642729 /* MainViewController.swift in Sources */,
 				55EC8C9C23E0861000642729 /* AppDelegate.swift in Sources */,
 				55EC8C9E23E0861000642729 /* SceneDelegate.swift in Sources */,
+				55EC8CB423E0BD8100642729 /* SettingsView.swift in Sources */,
 				55EC8CB223E09AE400642729 /* MainView.swift in Sources */,
-				55EC8CB023E08FCF00642729 /* settingsViewController.swift in Sources */,
+				55EC8CB023E08FCF00642729 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

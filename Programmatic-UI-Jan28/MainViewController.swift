@@ -49,7 +49,7 @@ class MainViewController: UIViewController {
 // put the segue to  settings viewController
       
 // create an instance of the settings view controller
-        let settingsVC = settingsViewController()
+        let settingsVC = SettingsViewController()
         
         // different ways to transiton
 //        present(settingsVC,animated: true)
