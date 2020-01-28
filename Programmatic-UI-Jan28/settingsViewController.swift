@@ -8,6 +8,11 @@
 
 import UIKit
 
+struct AppKey {
+    // want to capture the constant.
+    static let appColorKey = "app color"
+}
+
 class SettingsViewController: UIViewController {
     
     //private let settingsVieww = SettingsView()
@@ -24,9 +29,10 @@ class SettingsViewController: UIViewController {
     //
 
     override func viewDidLoad() {
+        // gets called only on initial load so only once
         super.viewDidLoad()
 
-        view.backgroundColor = .systemPurple
+       // view.backgroundColor = UIColor(named: colorName)
         
         // configure delegate and dataSource of pickerView
         
@@ -36,10 +42,10 @@ class SettingsViewController: UIViewController {
         let colorName = colors[0]
         view.backgroundColor = UIColor(named: colorName)
         
+        //updateAppColor()
+        
     }
-
 }
-
 
 extension SettingsViewController: UIPickerViewDataSource{
     
@@ -59,8 +65,15 @@ extension SettingsViewController: UIPickerViewDelegate{
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // this where you capture the selected color
+        
         let colorName = colors[row]
         view.backgroundColor = UIColor(named: colorName)
+        
+        // save color name to user defaults
+        UserDefaults.standard.set(colorName, forKey: AppKey.appColorKey)
+        
+        
     }
 }
 

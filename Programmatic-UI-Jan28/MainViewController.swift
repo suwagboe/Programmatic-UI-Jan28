@@ -28,12 +28,27 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // use system colors so it can configure to dark mode.
-                    view.backgroundColor = .systemPink
+                    view.backgroundColor = .systemBackground
        configureNavBar()
         
         //add target action for reset
         mainView.resetButton.addTarget(self, action: #selector(resetAppColor(_:)), for: .touchUpInside)
     }
+    
+        override func viewWillAppear(_ animated: Bool) {
+            // gets called everytime you go to back to the view.
+            super.viewWillAppear(true)
+            updateAppColor()
+        }
+        
+        private func updateAppColor(){
+            
+            if let colorName = UserDefaults.standard.object(forKey: AppKey.appColorKey) as? String{
+                view.backgroundColor = UIColor(named: colorName)
+            }
+        }
+
+    
     
     private func configureNavBar() {
                // set title of navigation bar
